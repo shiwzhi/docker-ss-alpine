@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk update;apk add python3;pip3 install shadowsocks
+RUN apk update;apk add python3 libsodium;pip3 install shadowsocks
 
 ENV method aes-256-cfb
 ENV pass=swz
